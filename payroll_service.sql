@@ -13,3 +13,5 @@ insert into employee_payroll (Name, Salary, Startdate) values ('Bharath', '50000
 insert into employee_payroll (Name, Salary, Startdate) values ('Susmitha', '45000', '26-6-2021')
 insert into employee_payroll (Name, Salary, Startdate) values ('Sriram', '40000', '26-7-2021')
 insert into employee_payroll (Name, Salary, Startdate) values ('Nagoor', '35000', '26-8-2021')
+
+Select * from employee_payroll
