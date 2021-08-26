@@ -15,3 +15,7 @@ insert into employee_payroll (Name, Salary, Startdate) values ('Sriram', '40000'
 insert into employee_payroll (Name, Salary, Startdate) values ('Nagoor', '35000', '26-8-2021')
 
 Select * from employee_payroll
+
+Select Salary from employee_payroll where Name='bharath'
+
+Select Salary from employee_payroll where Startdate between ('26-5-2021') and ('26-6-2021')
