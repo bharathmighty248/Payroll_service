@@ -13,6 +13,7 @@ insert into employee_payroll (Name, Salary, Startdate) values ('Bharath', '50000
 insert into employee_payroll (Name, Salary, Startdate) values ('Susmitha', '45000', '26-6-2021')
 insert into employee_payroll (Name, Salary, Startdate) values ('Sriram', '40000', '26-7-2021')
 insert into employee_payroll (Name, Salary, Startdate) values ('Nagoor', '35000', '26-8-2021')
+insert into employee_payroll (Name, Salary, Startdate) values ('Anusha', '30000', '26-8-2021')
 
 Select * from employee_payroll
 
@@ -26,7 +27,30 @@ Add Gender varchar(1)
 Update employee_payroll 
 set Gender ='M' where Name='Bharath' or Name='Sriram' or Name='Nagoor'
 Update employee_payroll 
-set Gender='F' where name='Susmitha'
+set Gender='F' where name='Susmitha' or Name='Anusha'
 
 Select * from employee_payroll
+
+Alter Table employee_payroll
+Alter Column Salary int
+
+Select SUM(Salary) From employee_payroll Where Gender='M' Group by Gender
+
+Select SUM(Salary) From employee_payroll Where Gender='F' Group by Gender
+
+Select AVG(Salary) From employee_payroll Where Gender='M' Group by Gender
+
+Select AVG(Salary) From employee_payroll Where Gender='F' Group by Gender
+
+Select MIN(Salary) From employee_payroll Where Gender='M' Group by Gender
+
+Select MIN(Salary) From employee_payroll Where Gender='F' Group by Gender
+
+Select MAX(Salary) From employee_payroll Where Gender='M' Group by Gender
+
+Select MAX(Salary) From employee_payroll Where Gender='F' Group by Gender
+
+Select COUNT(Salary) From employee_payroll Where Gender='M' Group by Gender
+
+Select COUNT(Salary) From employee_payroll Where Gender='F' Group by Gender
 
