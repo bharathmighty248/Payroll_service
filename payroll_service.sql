@@ -54,3 +54,6 @@ Select COUNT(Salary) From employee_payroll Where Gender='M' Group by Gender
 
 Select COUNT(Salary) From employee_payroll Where Gender='F' Group by Gender
 
+Alter Table employee_payroll
+Add Phone varchar(13), Address varchar(20) null Default ('Hyderabad') With Values, Department varchar(20) Not null Default ('HR')
+
