@@ -63,6 +63,11 @@ Update employee_payroll Set Phone='3333333333' Where Name='Sriram'
 Update employee_payroll Set Phone='4444444444' Where Name='Nagoor'
 Update employee_payroll Set Phone='5555555555' Where Name='Anusha'
 
+Update employee_payroll Set Department='HR' Where Name='Bharath'
+Update employee_payroll Set Department='Admin' Where Name='Susmitha'
+Update employee_payroll Set Department='Accounts' Where Name='Sriram'
+Update employee_payroll Set Department='Operations' Where Name='Nagoor'
+Update employee_payroll Set Department='Inspection' Where Name='Anusha'
 
 Select * From employee_payroll
 
