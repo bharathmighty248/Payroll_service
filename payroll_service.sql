@@ -57,3 +57,12 @@ Select COUNT(Salary) From employee_payroll Where Gender='F' Group by Gender
 Alter Table employee_payroll
 Add Phone varchar(13), Address varchar(20) null Default ('Hyderabad') With Values, Department varchar(20) Not null Default ('HR')
 
+Update employee_payroll Set Phone='1111111111' Where Name='Bharath'
+Update employee_payroll Set Phone='2222222222' Where Name='Susmitha'
+Update employee_payroll Set Phone='3333333333' Where Name='Sriram'
+Update employee_payroll Set Phone='4444444444' Where Name='Nagoor'
+Update employee_payroll Set Phone='5555555555' Where Name='Anusha'
+
+
+Select * From employee_payroll
+
