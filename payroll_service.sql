@@ -66,7 +66,7 @@ Update employee_payroll Set Phone='5555555555' Where Name='Anusha'
 Update employee_payroll Set Department='HR' Where Name='Bharath'
 Update employee_payroll Set Department='Admin' Where Name='Susmitha'
 Update employee_payroll Set Department='Accounts' Where Name='Sriram'
-Update employee_payroll Set Department='Sales' Where Name='Nagoor'
+Update employee_payroll Set Department='Operations' Where Name='Nagoor'
 Update employee_payroll Set Department='Production' Where Name='Anusha'
 
 Select * From employee_payroll
@@ -93,4 +93,8 @@ set Basic_pay=30000 ,Deductions=0, Taxable_Pay=0,Income_Tax=0,Net_Pay=0 where na
 
 Select * from employee_payroll
 
+insert into employee_payroll (Name, Basic_pay, Startdate, Gender, Phone, Department, Deductions, Taxable_Pay, Income_Tax, Net_Pay) values ('Terisa', '50000', '26-5-2021', 'F', '6666666666', 'Sales', '0', '0', '0', '0')
 
+insert into employee_payroll (Name, Basic_pay, Startdate, Gender, Phone, Department, Deductions, Taxable_Pay, Income_Tax, Net_Pay) values ('Terisa', '60000', '26-6-2021', 'F', '7777777777', 'Marketting', '0', '0', '0', '0')
+
+Select * from employee_payroll
