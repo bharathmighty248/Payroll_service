@@ -97,4 +97,5 @@ insert into employee_payroll (Name, Basic_pay, Startdate, Gender, Phone, Departm
 
 insert into employee_payroll (Name, Basic_pay, Startdate, Gender, Phone, Department, Deductions, Taxable_Pay, Income_Tax, Net_Pay) values ('Terisa', '60000', '26-6-2021', 'F', '7777777777', 'Marketting', '0', '0', '0', '0')
 
+
 Select * from employee_payroll
