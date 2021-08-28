@@ -66,8 +66,31 @@ Update employee_payroll Set Phone='5555555555' Where Name='Anusha'
 Update employee_payroll Set Department='HR' Where Name='Bharath'
 Update employee_payroll Set Department='Admin' Where Name='Susmitha'
 Update employee_payroll Set Department='Accounts' Where Name='Sriram'
-Update employee_payroll Set Department='Operations' Where Name='Nagoor'
-Update employee_payroll Set Department='Inspection' Where Name='Anusha'
+Update employee_payroll Set Department='Sales' Where Name='Nagoor'
+Update employee_payroll Set Department='Production' Where Name='Anusha'
 
 Select * From employee_payroll
+
+Exec Sp_Rename 'employee_payroll.Salary', 'Basic_pay', 'Column'
+
+Alter Table employee_payroll 
+Add Deductions Float, Taxable_Pay Float, Income_Tax Float, Net_Pay Float
+
+Update Employee_Payroll 
+set Basic_pay=40000 ,Deductions=0, Taxable_Pay=0,Income_Tax=0,Net_Pay=0 where name='Bharath'
+
+Update Employee_Payroll 
+set Basic_pay=35000 ,Deductions=0, Taxable_Pay=0,Income_Tax=0,Net_Pay=0 where name='Susmitha'
+
+Update Employee_Payroll 
+set Basic_pay=30000,Deductions=0, Taxable_Pay=0,Income_Tax=0,Net_Pay=0 where name='Sriram'
+
+Update Employee_Payroll 
+set Basic_pay=45000,Deductions=0, Taxable_Pay=0,Income_Tax=0,Net_Pay=0 where name='Nagoor'
+
+Update Employee_Payroll 
+set Basic_pay=30000 ,Deductions=0, Taxable_Pay=0,Income_Tax=0,Net_Pay=0 where name='Anusha'
+
+Select * from employee_payroll
+
 
